@@ -11,22 +11,18 @@ Objective: Classify each cassava image into four disease categories or a fifth c
     + SparseCategoricalCrossEntropy
  +  **Model**
     + EfficientNetB3 pretrained with Imagenet with no top.
-    + I added top layer with GlobalAveragePooling, Dropout, Dense
- +  **Optimizers**
-    + Adam
-    + RectifiedAdam
-    + Adabelief
+    + EfficientNetB3 top layer : GlobalAveragePooling + Dropout + Dense
+ +  **Optimizers & LR Scheduler**
+    + Adam + Lookahead + CosineDecay
+    + RectifiedAdam + Lookahead + CosineDecay
+    + Adabelief + Lookahead + CosineDecay
  
 | Optimizers  | Public Score | Private Score |
 | ------------- | ------------- | ------------- |
-| Adam  | 0.0000  | 0.0000  |
-| RectifiedAdam  | 0.0000  | 0.0000  |
-| Adabelief  | 0.0000  | 0.0000  |
+| Adam  | 0.8600  | 0.8626  |
+| RectifiedAdam  | 0.8571  | 0.8627 |
+| Adabelief  | 0.8464  | 0.8448  |
 
-+ **Learning Rate Scheduler** 
-    + CosineDecay
-    + CosineDecayRestarts
-    + ReduceLROnPlateau
 + **Training**
     + Batch Size: 8
     + 
@@ -36,5 +32,5 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 # Result & Improvements
 + Private: 0.8652
 + Public: 0.8607
-+ Improvements : 
++ Improvements : When I trained my model with single fold 
 
