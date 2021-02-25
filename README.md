@@ -10,7 +10,8 @@ Objective: Classify each cassava image into four disease categories or a fifth c
  + **Loss**
     + SparseCategoricalCrossEntropy
  +  **Model**
-    + EfficientNetB3 pretrained with Imagenet.
+    + EfficientNetB3 pretrained with Imagenet with no top.
+    + I added top layer with GlobalAveragePooling, Dropout, Dense
  +  **Optimizers**
     + Adam
     + RectifiedAdam
@@ -26,6 +27,9 @@ Objective: Classify each cassava image into four disease categories or a fifth c
     + CosineDecay
     + CosineDecayRestarts
     + ReduceLROnPlateau
++ **Training**
+    + Batch Size: 8
+    + 
 
 + **Ensemble & TTA(Test Time Augmentation)**
 
