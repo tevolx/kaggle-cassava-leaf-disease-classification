@@ -20,14 +20,15 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 | Optimizers  | Public Score | Private Score | 5Fold CV(Pubic / Private) |
 | ------------- | ------------- | ------------- | ------------- |
 | Adam  | 0.8600  | 0.8626  | 0.8607 / 0.8652  |
-| RectifiedAdam  | 0.8571  | 0.8627 | - / - |
-| Adabelief  | 0.8464  | 0.8448  | - / -  |
+| RectifiedAdam  | 0.8571  | 0.8627 | - |
+| Adabelief  | 0.8464  | 0.8448  | - |
 
 + **Training**
     + Batch Size: 8
     + 
 
-+ **Ensemble & TTA(Test Time Augmentation)**
++ **Inference**
+    + Ensemble & TTA(Test Time Augmentation)
 
 # Result & Improvements
 + Private: 0.8652
