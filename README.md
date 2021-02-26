@@ -36,7 +36,7 @@
 | Adam, RectifiedAdam  | 6 | 0.8609  | 0.8661 |
 | Adam, RectifiedAdam, Adabelief  | 6  | 0.8600  | 0.8685 |
 
-# Result & Improvements
+# Improvements & Results
 + **Improvements**
     + Ensemble is powerful! I used single model for the final submission because the public score was higher, but in private score ensemble models were higher.
     + I wanted to use CutMix and Mixup with label smoothing but OOM kept occur during training. Should study more about this.
