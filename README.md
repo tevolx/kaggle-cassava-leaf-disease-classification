@@ -28,7 +28,7 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 
 | Models | TTA | Public Score | Private Score |
 | ------------- | ------------- | ------------- | ------------- |
-| Adam + Lookahead | 6  | 0.8600  | 0.8626 |
+| Adam | 6  | 0.8600  | 0.8626 |
 | Adam + SWA | 6  | 0.8548  | 0.8581 |
 | Adam(5Fold)  | 6  | 0.8607   | 0.8652 |
 | RectifiedAdam  | 6  | 0.8571  | 0.8627 |
