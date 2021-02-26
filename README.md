@@ -1,6 +1,6 @@
 ![image](image/Cassava_Leaf_Classification.JPG)
 # Cassava Leaf Diease Classification
-Objective: Classify each cassava image into four disease categories or a fifth category indicating a healthy leaf.
+**Objective :** Classify each cassava image into four disease categories or a fifth category indicating a healthy leaf.
 
 # Solution
  + **BaseLine Code** : I used my tensorflow tutorial code as a baseline code for this contest. You can see my code here [Tensorflow-Tutorial](https://github.com/stuart-park/Intern-Tensorflow_Tutorial)
@@ -37,12 +37,12 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 | Adam, RectifiedAdam, Adabelief  | 6  | 0.8600  | 0.8685 |
 
 # Result & Improvements
-+ Improvements
++ **Improvements**
     + Ensemble is powerful! I used single model for the final submission because the public score was higher, but in private score ensemble models were higher.
     + I wanted to use CutMix and Mixup with label smoothing but OOM kept occur during training. Should study more about this.
     + Also I wanted to use ResNeXt50 model, but I couldn't find how to use it from keras.
     + Train dataset for this competition had few miss labeled data, and after the competition I've found out that I could have tried different loss, like bi-tempered loss. Also have to study more about this.
-+ Results
++ **Results**
     + Private: 0.8652
     + Public: 0.8607
     + This was my first competition for image classification and I've learned many things during competition. Thanks for all kagglers and organizers for this competition.
