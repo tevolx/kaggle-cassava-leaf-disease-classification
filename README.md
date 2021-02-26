@@ -16,13 +16,6 @@ Objective: Classify each cassava image into four disease categories or a fifth c
     + Adam + Lookahead + CosineDecay
     + RectifiedAdam + Lookahead + CosineDecay
     + Adabelief + Lookahead + CosineDecay
- 
-| Optimizers  | Public Score | Private Score | 5Fold CV(Pubic / Private) |
-| ------------- | ------------- | ------------- | ------------- |
-| Adam  | 0.8600  | 0.8626  | 0.8607 / 0.8652  |
-| RectifiedAdam  | 0.8571  | 0.8627 | - |
-| Adabelief  | 0.8620  | 0.8638  | - |
-
 + **Training**
     + Batch Size: 8
     + Epochs :10 
@@ -35,6 +28,7 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 | Models | TTA | Public Score | Private Score |
 | ------------- | ------------- | ------------- | ------------- |
 | Adam  | 6  | 0.8600  | 0.8626 |
+| Adam(5Fold)  | 6  | 0.8607   | 0.8652 |
 | RectifiedAdam  | 6  | 0.8571  | 0.8627 |
 | Adabelief  | 6 | 0.8620  | 0.8638 |
 | Adam, RectifiedAdam  | 6 | 0.8609  | 0.8661 |
