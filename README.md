@@ -14,6 +14,7 @@ Objective: Classify each cassava image into four disease categories or a fifth c
     + EfficientNetB3 top layer : GlobalAveragePooling + Dropout + Dense
  +  **Optimizers & LR Scheduler**
     + Adam + Lookahead + CosineDecay
+    + Adam + SWA(Stochastic Weight Averaging) + CosineDecay
     + RectifiedAdam + Lookahead + CosineDecay
     + Adabelief + Lookahead + CosineDecay
 + **Training**
@@ -27,7 +28,8 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 
 | Models | TTA | Public Score | Private Score |
 | ------------- | ------------- | ------------- | ------------- |
-| Adam  | 6  | 0.8600  | 0.8626 |
+| Adam + Lookahead | 6  | 0.8600  | 0.8626 |
+| Adam + SWA | 6  | 0.8548  | 0.8581 |
 | Adam(5Fold)  | 6  | 0.8607   | 0.8652 |
 | RectifiedAdam  | 6  | 0.8571  | 0.8627 |
 | Adabelief  | 6 | 0.8620  | 0.8638 |
@@ -37,5 +39,4 @@ Objective: Classify each cassava image into four disease categories or a fifth c
 # Result & Improvements
 + Private: 0.8652
 + Public: 0.8607
-+ Improvements : When I trained my model with single fold 
 
